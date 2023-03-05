@@ -2,11 +2,11 @@
 'Software II - Advanced Java Concepts'
 
 ## Resources
- - [IntelliJ Community 2021.1.3]
- - [JDK 17.0.1]
- - [JavaFX SDK 17.0.1]
- - [MySQL Workench]
- - [mysql-connector-java-8.0.25]
+ - IntelliJ Community 2021.1.3
+ - JDK 17.0.1
+ - JavaFX SDK 17.0.1
+ - MySQL Workench
+ - mysql-connector-java-8.0.25
 
 ### REQUIREMENTS ###
 - Your submission must be your original work. No more than a combined total of 30% of the submission and no more than a 10% match to any one individual source can be directly quoted or closely paraphrased from sources, even if cited correctly. The originality report that is provided when you submit your task can be used as a guide.
