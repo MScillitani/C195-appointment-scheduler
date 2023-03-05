@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="325.0" prefWidth="575.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ModifyAppointmentController">
+   <children>
+      <Text layoutX="177.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modify Appointment">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="25.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact" />
+      <Button layoutX="375.0" layoutY="260.0" mnemonicParsing="false" onAction="#saveButtonClicked" prefWidth="55.0" text="Save" />
+      <Button layoutX="495.0" layoutY="260.0" mnemonicParsing="false" onAction="#cancelButtonClicked" prefWidth="55.0" text="Cancel" />
+      <TextField fx:id="AppointmentIdField" disable="true" editable="false" layoutX="100.0" layoutY="60.0" prefWidth="175.0" promptText="Auto-generated" />
+      <Text layoutX="25.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID #" />
+      <Text layoutX="25.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title" />
+      <Text layoutX="25.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" />
+      <Text layoutX="25.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Location" />
+      <Text layoutX="25.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type" />
+      <Text layoutX="300.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <DatePicker fx:id="appointmentDateBox" layoutX="375.0" layoutY="60.0" prefWidth="175.0" />
+      <Text layoutX="300.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start Time">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="appointmentStartComboBox" layoutX="375.0" layoutY="100.0" prefWidth="175.0" />
+      <Text layoutX="300.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="End Time">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="appointmentEndComboBox" layoutX="375.0" layoutY="140.0" prefWidth="175.0" />
+      <Text layoutX="300.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cust. ID">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="300.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User ID">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <TextField fx:id="appointmentTitleField" layoutX="100.0" layoutY="100.0" prefWidth="175.0" />
+      <TextField fx:id="appointmentDescriptionField" layoutX="100.0" layoutY="140.0" prefWidth="175.0" />
+      <TextField fx:id="appointmentLocationField" layoutX="100.0" layoutY="180.0" prefWidth="175.0" />
+      <ComboBox fx:id="appointmentContactComboBox" layoutX="100.0" layoutY="220.0" prefWidth="175.0" promptText="Select a contact" />
+      <TextField fx:id="appointmentTypeField" layoutX="100.0" layoutY="260.0" prefWidth="175.0" />
+      <ComboBox fx:id="appointmentCustomerIdComboBox" layoutX="375.0" layoutY="180.0" prefWidth="175.0" promptText="Select a customer ID" />
+      <ComboBox fx:id="appointmentUserIdComboBox" layoutX="375.0" layoutY="220.0" prefWidth="175.0" promptText="Select a user ID" />
+   </children>
+</AnchorPane>
